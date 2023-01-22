@@ -1,0 +1,78 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.photos {
+    /* border: 1px solid red; */
+    width: 90vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.letter p{
+    font-family: 'Christian', sans-serif;
+    font-size: 6rem;
+    text-align: justify;
+    width: 80vw;
+}
+
+.photos img {
+    width: 22%;
+    margin: 5px;
+    box-shadow: 2px 2px 4px #000;
+    border-radius: 10px;
+}
+.heart {
+    display: flex;
+    justify-content: center;
+}
+
+/* .black_white {
+    filter: grayscale(100%);
+} */
+
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(231, 229, 229, 0.432);
+    border-radius: 10px;
+    height: 30px;
+    width: 50%;
+}
+.download:hover {
+    cursor: pointer;
+    background-color: rgba(112, 112, 112, 0.459);
+}
+.download a:link, a:visited, a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 415px) {
+    .photos img {
+        width: 150px;
+    }
+    .photos {
+        width: 350px;
+    }
+    .letter p{
+        font-size: 3.5rem;
+        width: 300px;
+    }
+    .download{
+        font-size: 0.75rem;
+    }
+}
+
+@font-face {
+    font-family: 'Christian';
+    src: url('../fonts/Christian-Regular.woff');
+}
